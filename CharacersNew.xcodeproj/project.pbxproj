@@ -19,6 +19,12 @@
 		12945B6E291C2B93005322F5 /* AboutContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12945B6D291C2B93005322F5 /* AboutContainerView.swift */; };
 		12945B70291C2EB2005322F5 /* WatchViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12945B6F291C2EB2005322F5 /* WatchViewContainer.swift */; };
 		12945B72291C2FFB005322F5 /* LocationViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12945B71291C2FFB005322F5 /* LocationViewContainer.swift */; };
+		12945B78291C40BD005322F5 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12945B77291C40BD005322F5 /* Service.swift */; };
+		12945B7A291C40E0005322F5 /* Networck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12945B79291C40E0005322F5 /* Networck.swift */; };
+		12945B7C291C4107005322F5 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12945B7B291C4107005322F5 /* Endpoint.swift */; };
+		12945B7F291C41BE005322F5 /* CharactersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12945B7E291C41BE005322F5 /* CharactersModel.swift */; };
+		12945B83291C42FC005322F5 /* CharacterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12945B82291C42FC005322F5 /* CharacterPresenter.swift */; };
+		12945B85291C453E005322F5 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12945B84291C453E005322F5 /* Builder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,12 @@
 		12945B6D291C2B93005322F5 /* AboutContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutContainerView.swift; sourceTree = "<group>"; };
 		12945B6F291C2EB2005322F5 /* WatchViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchViewContainer.swift; sourceTree = "<group>"; };
 		12945B71291C2FFB005322F5 /* LocationViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewContainer.swift; sourceTree = "<group>"; };
+		12945B77291C40BD005322F5 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		12945B79291C40E0005322F5 /* Networck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networck.swift; sourceTree = "<group>"; };
+		12945B7B291C4107005322F5 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		12945B7E291C41BE005322F5 /* CharactersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModel.swift; sourceTree = "<group>"; };
+		12945B82291C42FC005322F5 /* CharacterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPresenter.swift; sourceTree = "<group>"; };
+		12945B84291C453E005322F5 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,7 @@
 		12945B50291C216A005322F5 /* CharacersNew */ = {
 			isa = PBXGroup;
 			children = (
+				12945B73291C31FF005322F5 /* Layer */,
 				12945B66291C21A1005322F5 /* UI */,
 				12945B65291C217E005322F5 /* App */,
 				12945B57291C216A005322F5 /* Main.storyboard */,
@@ -84,6 +97,7 @@
 				12945B51291C216A005322F5 /* AppDelegate.swift */,
 				12945B53291C216A005322F5 /* SceneDelegate.swift */,
 				12945B55291C216A005322F5 /* ViewController.swift */,
+				12945B84291C453E005322F5 /* Builder.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -91,14 +105,58 @@
 		12945B66291C21A1005322F5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				12945B81291C42DB005322F5 /* Presenter */,
+				12945B80291C41C8005322F5 /* View */,
+				12945B7D291C41AD005322F5 /* Model */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		12945B73291C31FF005322F5 /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				12945B74291C3208005322F5 /* Network */,
+			);
+			path = Layer;
+			sourceTree = "<group>";
+		};
+		12945B74291C3208005322F5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				12945B7B291C4107005322F5 /* Endpoint.swift */,
+				12945B77291C40BD005322F5 /* Service.swift */,
+				12945B79291C40E0005322F5 /* Networck.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		12945B7D291C41AD005322F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				12945B7E291C41BE005322F5 /* CharactersModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		12945B80291C41C8005322F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				12945B67291C21C1005322F5 /* Characters.swift */,
 				12945B69291C2762005322F5 /* CharacterHeaderView.swift */,
 				12945B6B291C2A28005322F5 /* CharacterTabelViewCell.swift */,
 				12945B6D291C2B93005322F5 /* AboutContainerView.swift */,
-				12945B71291C2FFB005322F5 /* LocationViewContainer.swift */,
 				12945B6F291C2EB2005322F5 /* WatchViewContainer.swift */,
+				12945B71291C2FFB005322F5 /* LocationViewContainer.swift */,
 			);
-			path = UI;
+			path = View;
+			sourceTree = "<group>";
+		};
+		12945B81291C42DB005322F5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				12945B82291C42FC005322F5 /* CharacterPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,13 +232,19 @@
 			files = (
 				12945B70291C2EB2005322F5 /* WatchViewContainer.swift in Sources */,
 				12945B56291C216A005322F5 /* ViewController.swift in Sources */,
+				12945B7C291C4107005322F5 /* Endpoint.swift in Sources */,
 				12945B6A291C2762005322F5 /* CharacterHeaderView.swift in Sources */,
 				12945B72291C2FFB005322F5 /* LocationViewContainer.swift in Sources */,
 				12945B6E291C2B93005322F5 /* AboutContainerView.swift in Sources */,
+				12945B83291C42FC005322F5 /* CharacterPresenter.swift in Sources */,
+				12945B7A291C40E0005322F5 /* Networck.swift in Sources */,
 				12945B52291C216A005322F5 /* AppDelegate.swift in Sources */,
 				12945B54291C216A005322F5 /* SceneDelegate.swift in Sources */,
+				12945B7F291C41BE005322F5 /* CharactersModel.swift in Sources */,
+				12945B78291C40BD005322F5 /* Service.swift in Sources */,
 				12945B68291C21C1005322F5 /* Characters.swift in Sources */,
 				12945B6C291C2A28005322F5 /* CharacterTabelViewCell.swift in Sources */,
+				12945B85291C453E005322F5 /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

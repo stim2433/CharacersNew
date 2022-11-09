@@ -12,12 +12,11 @@ class CharacterHeaderView: UITableViewHeaderFooterView {
     
     override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
-//        configurationHeaderView()
     }
     
     func configurationHeaderView () {
-        header.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
-        header.backgroundColor = .green
+        header.frame = CGRect(x: 24, y: 0, width: frame.width, height: frame.height)
+        header.font = UIFont.systemFont(ofSize: 31)
         contentView.addSubview(header)
     }
     

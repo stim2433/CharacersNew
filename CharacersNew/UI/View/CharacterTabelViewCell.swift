@@ -14,14 +14,12 @@ class CharacterTabelViewCell: UITableViewCell {
     let content = AboutContainerView ()
     
     func configurationView () {
-        avatar.frame = CGRect(x: 0, y: 0, width: frame.height, height: frame.height)
-        content.frame = CGRect(x: avatar.frame.maxX, y: 0, width: frame.width - frame.height, height: frame.height)
-        
-//        avatar.backgroundColor = .green
+        avatar.frame = CGRect(x: 24, y: 16, width: frame.height - 32, height: frame.height - 32)
+        content.frame = CGRect(x: avatar.frame.maxX + 18, y: 16, width: frame.width - frame.height - 18, height: frame.height - 32)
+        avatar.layer.masksToBounds = true
+        avatar.layer.cornerRadius = avatar.frame.height / 4
         content.configurationView()
         addSubview(avatar)
         addSubview(content)
     }
-    
-    
 }
