@@ -13,7 +13,7 @@ class AboutContainerView: UIView {
     let titleView = UILabel()
     let genderView = UILabel()
     let watchViewContainer = WatchViewContainer()
-    let locationViewContainer = UIView()
+    let locationViewContainer = LocationViewContainer()
     let statusView = UILabel()
     
     
@@ -25,6 +25,7 @@ class AboutContainerView: UIView {
         statusView.frame = CGRect(x: titleView.frame.maxX, y: 0, width: 56, height: 25)
         
         watchViewContainer.configurationView()
+        locationViewContainer.configurationView()
         
         addSubview(titleView)
         addSubview(genderView)
