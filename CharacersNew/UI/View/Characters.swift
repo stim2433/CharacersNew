@@ -31,7 +31,7 @@ class CharactersViewController: UIViewController {
 
 extension CharactersViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return view.frame.height / 7.2
+        return view.frame.height / 7
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -56,6 +56,7 @@ extension CharactersViewController: UITableViewDataSource {
         guard let data = data else { return cell }
         
         cell.content.statusView.text = data.status
+        cell.content.setStatus()
         cell.content.titleView.text = data.name
         cell.content.locationViewContainer.locationLabel.text = data.location.name
         cell.content.genderView.text = "\(data.species), \(data.gender )"
@@ -63,7 +64,12 @@ extension CharactersViewController: UITableViewDataSource {
         presenter?.getImage(strUrl: data.image, index: indexPath)
         presenter?.callBack = { index in
             let updateCell = tableView.cellForRow(at: index) as! CharacterTabelViewCell
-            updateCell.avatar.image = UIImage (data: (self.presenter?.imageModel)!)
+            let images = UIImage(data: (self.presenter?.imageModel)!)
+            if data.status == "unknown" {
+                updateCell.avatar.image = images?.inverseImage(cgResult: true)
+            } else {
+                updateCell.avatar.image = images
+            }
         }
         
         return cell

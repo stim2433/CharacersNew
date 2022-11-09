@@ -20,8 +20,6 @@ class WatchViewContainer: UIView {
         watchView.font = UIFont.systemFont(ofSize: 14)
         watchView.textColor = UIColor(red: 255/255, green: 107/255, blue: 0/255, alpha: 1)
         watchView.text = "Watch episodes"
-//        watchView.backgroundColor = .white
-        
         
         addSubview(markImageView)
         addSubview(watchView)
