@@ -17,6 +17,7 @@
 		12945B6A291C2762005322F5 /* CharacterHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12945B69291C2762005322F5 /* CharacterHeaderView.swift */; };
 		12945B6C291C2A28005322F5 /* CharacterTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12945B6B291C2A28005322F5 /* CharacterTabelViewCell.swift */; };
 		12945B6E291C2B93005322F5 /* AboutContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12945B6D291C2B93005322F5 /* AboutContainerView.swift */; };
+		12945B70291C2EB2005322F5 /* WatchViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12945B6F291C2EB2005322F5 /* WatchViewContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		12945B69291C2762005322F5 /* CharacterHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterHeaderView.swift; sourceTree = "<group>"; };
 		12945B6B291C2A28005322F5 /* CharacterTabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTabelViewCell.swift; sourceTree = "<group>"; };
 		12945B6D291C2B93005322F5 /* AboutContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutContainerView.swift; sourceTree = "<group>"; };
+		12945B6F291C2EB2005322F5 /* WatchViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchViewContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				12945B69291C2762005322F5 /* CharacterHeaderView.swift */,
 				12945B6B291C2A28005322F5 /* CharacterTabelViewCell.swift */,
 				12945B6D291C2B93005322F5 /* AboutContainerView.swift */,
+				12945B6F291C2EB2005322F5 /* WatchViewContainer.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12945B70291C2EB2005322F5 /* WatchViewContainer.swift in Sources */,
 				12945B56291C216A005322F5 /* ViewController.swift in Sources */,
 				12945B6A291C2762005322F5 /* CharacterHeaderView.swift in Sources */,
 				12945B6E291C2B93005322F5 /* AboutContainerView.swift in Sources */,
