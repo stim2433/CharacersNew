@@ -20,8 +20,6 @@ class LocationViewContainer: UIView {
         locationLabel.frame = CGRect(x: markLocation.frame.maxX + 7.8, y: 10, width: frame.width, height: 17)
         locationLabel.font = UIFont.systemFont(ofSize: 14)
         locationLabel.textColor = UIColor (red: 82/255, green: 82/255, blue: 82/255, alpha: 1)
-//        82, 82, 82, 1
-//        markLocation.backgroundColor = .green
         locationLabel.text = "test"
         
         addSubview(markLocation)

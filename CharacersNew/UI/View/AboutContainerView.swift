@@ -16,8 +16,6 @@ class AboutContainerView: UIView {
     let locationViewContainer = LocationViewContainer()
     let statusView = UILabel()
     
-//    var status: Status = .alive
-    
     func configurationView() {
         titleView.frame = CGRect(x: 0, y: 0, width: 137, height: 25)
         titleView.font = UIFont.systemFont(ofSize: 21)
@@ -27,14 +25,11 @@ class AboutContainerView: UIView {
         watchViewContainer.backgroundColor = UIColor(red: 255/255, green: 107/255, blue: 0/255, alpha: 0.1)
         watchViewContainer.layer.cornerRadius = watchViewContainer.frame.height / 2
         locationViewContainer.frame = CGRect(x: 0, y: watchViewContainer.frame.maxY, width: frame.width, height: 17)
-//        statusView.frame = CGRect(x: titleView.frame.maxX + 49, y: 0, width: 56, height: 25)
         statusView.frame.size.height = 25
         statusView.layer.cornerRadius = statusView.frame.height / 2
         statusView.layer.masksToBounds = true
         statusView.font = UIFont.systemFont(ofSize: 14)
         statusView.textAlignment = .center
-//        statusView.backgroundColor = status.statusColorBackground
-//        setStatus()
         
         watchViewContainer.configurationView()
         locationViewContainer.configurationView()

@@ -37,10 +37,6 @@ extension CharactersViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 37
     }
-    
-//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        return "String"
-//    }
 }
 
 extension CharactersViewController: UITableViewDataSource {
